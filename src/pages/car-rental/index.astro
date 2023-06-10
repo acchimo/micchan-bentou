@@ -7,6 +7,8 @@ import Button from "../../components/Button.astro";
 import estima from "../../images/car-rental/estima.jpg";
 import serena from "../../images/car-rental/serena.jpg";
 import stepwagon from "../../images/car-rental/stepwagon.jpg";
+import spaciaJpg from "../../images/car-rental/spacia.jpg";
+import spaciaWebp from "../../images/car-rental/spacia.webp";
 import form from "../../images/car-rental/form.svg";
 import recieve from "../../images/car-rental/recieve.svg";
 import submit from "../../images/car-rental/submit.svg";
@@ -103,6 +105,17 @@ const seo = {
 						<img src={stepwagon} alt="" />
 					</figure>
 					<p class="lineup__car-name">ステップワゴン</p>
+					<p class="lineup__car-desc">
+						カーナビ<br />
+						オプション 子供用シート貸出 ¥3,000<br />
+						フルカバーの保険付き
+					</p>
+				</li>
+				<li>
+					<figure>
+						<img src={spaciaJpg} alt="" />
+					</figure>
+					<p class="lineup__car-name">スペーシア</p>
 					<p class="lineup__car-desc">
 						カーナビ<br />
 						オプション 子供用シート貸出 ¥3,000<br />
@@ -340,6 +353,15 @@ const seo = {
 		align-items: flex-start;
 		justify-content: space-between;
 		gap: 5%;
+		flex-wrap: wrap;
+	}
+	.lineup__list:after{
+		content: '';
+		width: 30%;
+	}
+	.lineup__list li {
+		width: 30%;
+		margin-bottom: 120px;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -353,6 +375,7 @@ const seo = {
 		}
 		.lineup__list li {
 			margin-top: 3rem;
+			width: 100%;
 		}
 	}
 
