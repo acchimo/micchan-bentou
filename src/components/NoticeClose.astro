@@ -5,7 +5,7 @@ import SectionLead from "./parts/SectionLead.astro";
 const headingText = "臨時休業のお知らせ";
 ---
 
-<!-- <Background name="menu" bgType="solidCream" headingText={headingText}>
+<Background name="menu" bgType="solidCream" headingText={headingText}>
         <p class="lead">
             いつも、みっちゃん弁当をお引き立ていただき、ありがとうございます！<br>
             さて、このたび、誠に勝手ながら、店舗内装工事のため、次の通り、臨時休業させていただきます。
@@ -15,21 +15,16 @@ const headingText = "臨時休業のお知らせ";
             工事終了後、おいしい沖縄の味をお届けできるようがんばってまいります！<br>
             期間中、ご不便をおかけしますが、何卒ご了承いただきますよう、よろしくお願いします。
         </p>
-</Background> -->
-<p class="lead">
-    臨時休業のお知らせ 店舗内改装工事のため休業いたします。
-    令和5（2023）年6月14日（水）〜6月21日（水）
-</p>
+</Background>
+
 
 <style>
-    .lead {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        line-height: 2;
-        font-size: 2.4rem;
-        color: red;
-        text-decoration: underline;
-    }
+
+.lead{
+    margin-top: 42px;
+		line-height: 2;
+		font-size: 2rem;
+		margin-bottom: 60px;
+
+	}
 </style>
