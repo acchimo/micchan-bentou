@@ -6,8 +6,10 @@ import FvImage02 from "../../images/fv/fv2x2-700.png";
 import FvImage02Webp from "../../images/fv/fv2x2.webp";
 import FvImage03 from "../../images/fv/fv3.png";
 import FvImage03Webp from "../../images/fv/fv3.webp";
+import NoticeClose from "../NoticeClose.astro";
 ---
 <section class="fv">
+  <NoticeClose />
   <div class="fv-inner">
     <div class="fv-text-block js-text-slider">
       <FvHeading />
@@ -45,6 +47,7 @@ import FvImage03Webp from "../../images/fv/fv3.webp";
 
 <style>
   .fv {
+    position: relative;
     background-color: var(--base-color);
     margin-right: calc(50% - 50vw);
     margin-left: calc(50% - 50vw);
