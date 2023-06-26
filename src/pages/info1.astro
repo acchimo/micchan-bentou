@@ -5,7 +5,7 @@ import HeadingH1 from "../components/parts/HeadingH1.astro";
 import { getBlogs } from "../library/microcms";
 
 const response = await getBlogs({ fields: ["id", "title","content","image"],limit: 1000 });
-
+console.log(response)
 ---
 
 <Layout>
